@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
+    <meta name="apple-mobile-web-app-capable"/>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+    <a-assets>
+    <video muted="true" autoplay loop="true" webkit-playsinline id="video1" src="assets/video1.mp4"></video>
+    <video muted="true" autoplay loop="true" webkit-playsinline id="video2" src="assets/video2-2.mp4"></video>
+    <video muted="true" autoplay loop="true" webkit-playsinline id="video3" src="assets/video3-2.mp4"></video>  
+    <video muted="true" autoplay loop="true" webkit-playsinline id="video4" src="assets/video4-2.mp4"></video>-->
+    </a-assets>
+	
+    <a-marker type="pattern" url='./pattern-marker1.patt'>
+       <a-video src="#video1" rotation="-90 0 0" position="0 0 0"></a-video>     
+    </a-marker>
+    
+    <a-marker type="pattern" url='./pattern-marker2.patt'>
+       <a-video src="#video2" rotation="-90 0 0" position="0 0 0"></a-video>     
+    </a-marker>
+    
+    <a-marker type="pattern" url='./pattern-marker3.patt'>
+       <a-video  src="#video3" rotation="-90 0 0" position="0 0 0"></a-video>     
+    </a-marker>
+    
+    <a-marker type="pattern" url='./pattern-marker4.patt'>
+       <a-video  src="#video4" rotation="-90 0 0" position="0 0 0"></a-video>     
+    </a-marker>
+    
+    
+    <!-- add a simple camera -->
+		<a-entity camera></a-entity>
+
+	</a-scene>
+  <script>
+   
+  function addListener (){
+    var els = document.querySelectorAll("video");
+
+    for(var i =0;i < els.length;i++) {
+      var el = els[i];
+      
+      if (el.paused) {
+        el.play();
+      }
+    }
+  }
+  window.addEventListener('click', addListener);
+
+  </script>
+</body>
+</html>
