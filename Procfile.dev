@@ -1,0 +1,2 @@
+web: RAILS_ENV=development bundle exec puma config.ru 
+webpacker: npm run start

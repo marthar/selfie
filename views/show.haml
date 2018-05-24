@@ -1,0 +1,21 @@
+%script{src:"/assets/aframe.min.js"}
+%script{src:"/assets/aframe-ar.js"}
+
+%button.start
+  Show Me
+= erb :selfie
+:javascript
+  function addListener (){
+    var els = document.querySelectorAll("video");
+
+    for(var i =0;i < els.length;i++) {
+      var el = els[i];
+      
+      if (el.paused) {
+        el.play();
+      }
+    }
+
+    document.querySelector(".start").style = "display:none";
+  }
+  window.addEventListener('click', addListener);

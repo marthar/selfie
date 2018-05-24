@@ -1,0 +1,27 @@
+
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false' vr-mode-ui="enabled: false">
+  <a-assets>
+    <% @selfies.each_with_index do |selfie,idx| %>
+      <video muted crossorigin autoplay loop playsinline id="video<%= idx+1 %>"  src="<%= selfie.selfie_url %>"></video>
+    <% end %>
+  </a-assets>
+
+  <a-marker type="pattern" url='/assets/pattern-marker1.patt'>
+     <a-video src="#video1" scale='1.85 1.85 1' rotation="-90 0 0" position="0 0 0"></a-video>     
+  </a-marker>
+  
+  <a-marker type="pattern" url='/assets/pattern-marker2.patt'>
+     <a-video src="#video2" scale='1.85 1.85 1' rotation="-90 0 0" position="0 0 0"></a-video>     
+  </a-marker>
+  
+  <a-marker type="pattern" url='/assets/pattern-marker3.patt'>
+     <a-video src="#video3" scale='1.85 1.85 1'  rotation="-90 0 0" position="0 0 0"></a-video>     
+  </a-marker>
+  
+  <a-marker type="pattern" url='/assets/pattern-marker4.patt'>
+     <a-video  src="#video4" scale='1.85 1.85 1'  rotation="-90 0 0" position="0 0 0"></a-video>     
+  </a-marker>
+	<a-entity camera></a-entity>
+
+</a-scene>
+
