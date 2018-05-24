@@ -66,7 +66,7 @@ def make_token
   SecureRandom.urlsafe_base64(64).gsub(/\-/,"")[0..47].downcase
 end
 
-class Selfie < Sinatra::Base
+class SelfieApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   helpers Sinatra::Cookies
   

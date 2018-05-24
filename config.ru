@@ -16,11 +16,11 @@ if development?
 
   run Rack::URLMap.new(
     '/assets' => AppProxy.new,
-    '/' => Selfie
+    '/' => SelfieApp
   )
 
 else 
   run Rack::URLMap.new(
-    '/' => Selfie,
+    '/' => SelfieApp
   )
 end
