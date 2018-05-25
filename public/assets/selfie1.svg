@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 360 360" style="enable-background:new 0 0 360 360;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:20;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+
+    @keyframes hideshow {
+        0% { opacity: 0; }
+        25% { opacity: 0; }
+        26% { opacity: 1; }
+        49% { opacity: 1; }
+        50% { opacity: 0}
+        100% { opacity: 0; }
+}
+
+    .selfie1 {
+    animation: hideshow 4s 0s linear infinite;
+}
+
+    .selfie2 {
+    opacity: 0;
+    animation: hideshow 4s 1s linear infinite;
+}
+
+    .selfie3 {
+    opacity: 0;
+    animation: hideshow 4s 2s linear infinite;
+}
+    
+    .selfie4 {
+    opacity: 0;
+    animation: hideshow 4s 3s linear infinite;
+}
+    
+</style>
+
+<g>
+    <rect x="68.4" y="68.4" class="st0" width="223.2" height="223.2"/>
+</g>    
+    
+<g class="selfie1">
+	<rect x="68.4" y="68.4" class="st0" width="223.2" height="223.2"/>
+	<g>
+		<rect x="191.1" y="206.8" class="st1" width="13.2" height="13.2"/>
+		<rect x="177.9" y="219.9" class="st1" width="13.2" height="13.2"/>
+		<rect x="164.7" y="206.8" class="st1" width="13.2" height="13.2"/>
+		<rect x="191.1" y="219.9" class="st1" width="13.2" height="13.2"/>
+		<rect x="177.9" y="206.8" class="st1" width="13.2" height="13.2"/>
+		<rect x="206.5" y="126.9" class="st1" width="13.2" height="13.2"/>
+		<rect x="127.1" y="127.6" class="st1" width="13.2" height="13.2"/>
+		<rect x="206.5" y="140.1" class="st1" width="13.2" height="13.2"/>
+		<rect x="219.7" y="140.1" class="st1" width="13.2" height="13.2"/>
+		<rect x="179.9" y="180.4" class="st1" width="13.2" height="13.2"/>
+		<rect x="127.1" y="140.8" class="st1" width="13.2" height="13.2"/>
+		<rect x="140.3" y="140.8" class="st1" width="13.2" height="13.2"/>
+		<rect x="166.7" y="167.1" class="st1" width="13.2" height="13.2"/>
+	</g>
+</g>
+<g class="selfie2">
+	<rect x="68.4" y="68.4" class="st2" width="223.2" height="223.2"/>
+	<g>
+		<rect x="207" y="153" class="st1" width="13.5" height="13.5"/>
+		<rect x="193.5" y="139.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="193.5" y="220.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="153" y="220.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="166.5" y="193.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="180" y="193.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="166.5" y="220.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="207" y="139.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="207" y="220.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="220.5" y="139.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="166.5" y="180" class="st1" width="13.5" height="13.5"/>
+		<rect x="180" y="180" class="st1" width="13.5" height="13.5"/>
+		<rect x="139.5" y="139.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="139.5" y="153" class="st1" width="13.5" height="13.5"/>
+		<rect x="126" y="139.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="153" y="139.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="139.5" y="126" class="st1" width="13.5" height="13.5"/>
+		<rect x="126" y="126" class="st1" width="13.5" height="13.5"/>
+		<rect x="153" y="126" class="st1" width="13.5" height="13.5"/>
+		<rect x="166.5" y="166.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="180" y="220.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="220.5" y="207" class="st1" width="13.5" height="13.5"/>
+		<rect x="220.5" y="220.5" class="st1" width="13.5" height="13.5"/>
+		<rect x="193.5" y="126" class="st1" width="13.5" height="13.5"/>
+		<rect x="207" y="126" class="st1" width="13.5" height="13.5"/>
+		<rect x="220.5" y="126" class="st1" width="13.5" height="13.5"/>
+	</g>
+</g>
+<g class="selfie3">
+	<rect x="68.4" y="68.4" class="st2" width="223.2" height="223.2"/>
+	<g>
+		<rect x="190.4" y="147.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="122.4" y="201.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="217.5" y="188.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="149.6" y="215.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="136" y="215.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="163.2" y="215.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="203.9" y="201.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="203.9" y="215.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="217.5" y="201.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="217.5" y="147.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="203.9" y="147.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="133.8" y="147.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="136" y="201.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="176.8" y="215.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="190.4" y="215.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="133.8" y="133.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="147.4" y="133.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="147.4" y="147.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="122.4" y="188.2" class="st1" width="13.6" height="13.6"/>
+	</g>
+</g>
+<g class="selfie4">
+	<rect x="68.4" y="68.4" class="st2" width="223.2" height="223.2"/>
+	<g>
+		<rect x="193.6" y="139.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="193.6" y="125.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="139.2" y="125.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="193.6" y="207.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="180" y="220.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="180" y="193.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="166.4" y="220.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="166.4" y="193.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="152.8" y="193.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="207.2" y="139.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="207.2" y="125.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="193.6" y="193.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="193.6" y="220.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="152.8" y="207.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="139.2" y="139.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="152.8" y="139.2" class="st1" width="13.6" height="13.6"/>
+		<rect x="152.8" y="125.6" class="st1" width="13.6" height="13.6"/>
+		<rect x="152.8" y="220.8" class="st1" width="13.6" height="13.6"/>
+		<rect x="180" y="166.4" class="st1" width="13.6" height="13.6"/>
+		<rect x="166.4" y="166.4" class="st1" width="13.6" height="13.6"/>
+	</g>
+</g>
+</svg>

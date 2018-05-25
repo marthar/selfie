@@ -44,19 +44,26 @@ class Recorder extends React.Component {
   }
 
   recordButton = () => {
-    if(this.state.display == "waiting") {
+    var {display} = this.state;
+    //display="uploading";  
+ 
+    if(display == "waiting") {
       return <div className='recorder__buttons'>
-        <button className='recorder__record' onClick={this.clickRecord} >Go</button>
-        <div className='recorder__message'>
-          Press GO to record a 5s moving selfie.
+        <button className='recorder__record' onClick={this.clickRecord} >Record</button>
+          <div className='recorder__message'>
+          a five second selfie video
         </div>
       </div>
-    } else if(this.state.display == "connecting") {
-      return <button className='recorder__connecting'>Connecting..</button>
-    } else if(this.state.display == "recording") {
+    } else if(display == "connecting") {
+      return <div className='recorder__buttons'>
+          <button className='recorder__connecting'>Connecting</button>
+      </div>
+    } else if(display == "recording") {
       return <div className='recorder__recording'></div>
-    } else if(this.state.display == "uploading") {
-      return <div className='recorder__uploading'>Uploading...</div>
+    } else if(display == "uploading") {
+      return <div className='recorder__uploading'>
+          <img className='recorder__animation' src="/assets/selfie1.svg"/>
+          Uploading...</div>
     }
   }
 
