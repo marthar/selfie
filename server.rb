@@ -90,6 +90,7 @@ class SelfieApp < Sinatra::Base
 
     cookies[:token] ||= make_token
     
+    sleep 0.25 
     video_url = upload_video_to_cloudinary(recording_url)
 
     selfie = Selfie.create(
@@ -105,7 +106,8 @@ class SelfieApp < Sinatra::Base
     cookies[:token] ||= make_token
     my_selfie = Selfie.where(token: cookies[:token]).last
     @selfies = Selfie.where.not(token: cookies[:token]).last(20).uniq { |s| s.token }
-    @selfies = [ my_selfie ] + @selfies[0..3]
+    @selfies = [ my_selfie ] + @selfies
+    @selfies = @selfies.compact.first(4)
     @props = { display: 'view' }
     haml :show
   end

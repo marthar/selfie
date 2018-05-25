@@ -45,7 +45,12 @@ class Recorder extends React.Component {
 
   recordButton = () => {
     if(this.state.display == "waiting") {
-      return <button className='recorder__record' onClick={this.clickRecord} >Go</button>
+      return <div className='recorder__buttons'>
+        <button className='recorder__record' onClick={this.clickRecord} >Go</button>
+        <div className='recorder__message'>
+          Press GO to record a 5s moving selfie.
+        </div>
+      </div>
     } else if(this.state.display == "connecting") {
       return <button className='recorder__connecting'>Connecting..</button>
     } else if(this.state.display == "recording") {
@@ -59,12 +64,7 @@ class Recorder extends React.Component {
     return <div className='recorder'>
       <div className='recorder__header'>Selfie</div>
       <div className='recorder__preview' ref={this.videoContainer}></div>
-      <div className='recorder__buttons'>
-        {this.recordButton()}
-      </div>
-      <div className='recorder__message'>
-        Press GO to record a 5 second moving selfie.
-      </div>
+      {this.recordButton()}
     </div>
   }
 }
