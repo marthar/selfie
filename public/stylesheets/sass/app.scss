@@ -111,6 +111,14 @@ body {
     animation: pulse 0.75s infinite cubic-bezier(0.66, 0, 0, 1);
   }
 
+  &__noconnect {
+    position:absolute;
+    top:45%;
+    left:10%;
+    width:80%;
+    text-align:center;
+  }
+
   &__recording {
     position:absolute;
     left:0px;

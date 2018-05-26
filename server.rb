@@ -69,6 +69,11 @@ end
 class SelfieApp < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   helpers Sinatra::Cookies
+
+  configure :production do
+    set :host, "www.selfielove.us"
+    set :force_ssl, true
+  end
   
 
   get '/' do

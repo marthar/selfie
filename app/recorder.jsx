@@ -14,9 +14,10 @@ class Recorder extends React.Component {
 
   componentDidMount() {
     createLocalVideoTrack().then(track => {
-      console.log("Mounted");
       this.setState({ localTrack: track, display: "waiting" })
       this.videoContainer.current.appendChild(track.attach());
+    }, error => {
+      this.setState({ display: "noconnect" })
     });
   }
 
@@ -45,7 +46,6 @@ class Recorder extends React.Component {
 
   recordButton = () => {
     var {display} = this.state;
-    //display="uploading";  
  
     if(display == "waiting") {
       return <div className='recorder__buttons'>
@@ -64,6 +64,11 @@ class Recorder extends React.Component {
       return <div className='recorder__uploading'>
           <img className='recorder__animation' src="/assets/selfie1.svg"/>
           Uploading...</div>
+    } else if(display == "noconnect") {
+      return <div className='recorder__noconnect'>
+        Can't connect to the camera. 
+        Make sure you are using Safari on iOS or Chrome on Android.
+      </div>
     }
   }
 
