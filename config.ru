@@ -1,6 +1,8 @@
 require "./server.rb"
 require 'rack-proxy'
 require 'sass/plugin/rack'
+require 'rack/ssl'
+
 
 Sass::Plugin.options[:style] = :compressed
 use Sass::Plugin::Rack
@@ -20,6 +22,7 @@ if development?
   )
 
 else 
+  use Rack::SSL
   run Rack::URLMap.new(
     '/' => SelfieApp
   )

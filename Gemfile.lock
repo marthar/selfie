@@ -50,6 +50,8 @@ GEM
       rack
     rack-proxy (0.6.3)
       rack
+    rack-ssl (1.4.1)
+      rack
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rake (12.3.1)
@@ -103,6 +105,7 @@ DEPENDENCIES
   pg
   puma
   rack-proxy
+  rack-ssl
   rake
   sass
   sinatra
