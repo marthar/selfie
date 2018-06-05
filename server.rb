@@ -110,7 +110,8 @@ class SelfieApp < Sinatra::Base
   get '/show' do
     cookies[:token] ||= make_token
     my_selfie = Selfie.where(token: cookies[:token]).last
-    @selfies = Selfie.order("id DESC").where.not(token: cookies[:token]).last(40).uniq { |s| s.token }
+    @selfies = Selfie.order("id DESC").where(active: true)
+                      .where.not(token: cookies[:token]).last(40).uniq { |s| s.token }
     @selfies = [ my_selfie ] + @selfies
     @selfies = @selfies.compact.first(4)
     @props = { display: 'view' }
